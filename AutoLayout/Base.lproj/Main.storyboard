@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Dr-xn-tiG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O2z-NL-rKG">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -108,18 +108,108 @@
                     <view key="view" contentMode="scaleToFill" id="ZDy-f5-O0l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Adr-vg-iiS">
+                                <rect key="frame" x="133.66666666666663" y="137" width="146.99999999999997" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-Zo-wyW" customClass="RoundedButton" customModule="AutoLayout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9F-vt-0ld">
+                                        <rect key="frame" x="39" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K9-TD-Tpb">
+                                        <rect key="frame" x="78" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3l-0a-dE8">
+                                        <rect key="frame" x="117" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UPm-ni-USL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Adr-vg-iiS" firstAttribute="centerX" secondItem="ZDy-f5-O0l" secondAttribute="centerX" id="KkM-0l-8Cf"/>
+                            <constraint firstItem="3K9-TD-Tpb" firstAttribute="top" secondItem="UPm-ni-USL" secondAttribute="top" multiplier="2" constant="49" id="adz-DQ-7QO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuB-aI-fbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="94"/>
+            <point key="canvasLocation" x="35" y="790"/>
+        </scene>
+        <!--AutoLayout 5-->
+        <scene sceneID="O3R-K6-mSM">
+            <objects>
+                <viewController storyboardIdentifier="AutoLayout 5" id="O2z-NL-rKG" userLabel="AutoLayout 5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwH-mm-pUV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-7Z-ge7" userLabel="Red View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="owf-vY-Qzx" userLabel="Red View">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nmo-5u-FSw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="owf-vY-Qzx" firstAttribute="leading" secondItem="Nmo-5u-FSw" secondAttribute="leading" id="2Z7-N0-DNs"/>
+                            <constraint firstItem="Zo7-7Z-ge7" firstAttribute="top" secondItem="dwH-mm-pUV" secondAttribute="top" id="FEy-l2-6lN"/>
+                            <constraint firstItem="Zo7-7Z-ge7" firstAttribute="height" secondItem="dwH-mm-pUV" secondAttribute="height" multiplier="0.5" id="N7c-0h-9Qg"/>
+                            <constraint firstItem="owf-vY-Qzx" firstAttribute="top" secondItem="Zo7-7Z-ge7" secondAttribute="bottom" id="SIq-Eg-aWg"/>
+                            <constraint firstItem="Zo7-7Z-ge7" firstAttribute="trailing" secondItem="Nmo-5u-FSw" secondAttribute="trailing" id="cBs-J0-nAH"/>
+                            <constraint firstItem="owf-vY-Qzx" firstAttribute="trailing" secondItem="Nmo-5u-FSw" secondAttribute="trailing" id="drQ-lW-LG4"/>
+                            <constraint firstItem="Zo7-7Z-ge7" firstAttribute="leading" secondItem="Nmo-5u-FSw" secondAttribute="leading" id="gjM-59-Eag"/>
+                            <constraint firstAttribute="bottom" secondItem="owf-vY-Qzx" secondAttribute="bottom" id="qRe-jA-83o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGQ-Q6-FyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750.72463768115949" y="789.50892857142856"/>
+        </scene>
+        <!--AutoLayout 6-->
+        <scene sceneID="KNp-cf-jQS">
+            <objects>
+                <viewController storyboardIdentifier="AutoLayout6" id="C0F-ct-LBO" userLabel="AutoLayout 6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TNK-u9-2BA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cew-WL-laF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1LH-za-7Fp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1461" y="790"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="jBU-Zo-wyW">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,6 +219,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
